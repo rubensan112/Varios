@@ -101,8 +101,8 @@ model = keras.Sequential([
     #Transform the format of the images from a 2d-array 28 by 28, to 1d-array 28*28. This layer has no parameters to learn; it only reformats the data.
     keras.layers.Flatten(input_shape=(28, 28)),
     #After the pixels are flattened, the network consists of a sequence of two After the pixels are flattened, the network consists of a sequence of two
-    keras.layers.Dense(128, activation=tf.nn.relu), #Este tiene 128 neuronas (nodos)
-    keras.layers.Dense(10, activation=tf.nn.softmax) #Este contiene 10 neuronas
+    keras.layers.Dense(128, activation=tf.nn.relu), #Este tiene
+    keras.layers.Dense(10, activation=tf.nn.softmax) #Este contiene
 
     # Each node contains a score that indicates the probability that the current image belongs to one of the 10 classes.
 ])
