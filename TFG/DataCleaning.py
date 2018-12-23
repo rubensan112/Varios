@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 # Import tools needed for visualization
 from sklearn.tree import export_graphviz
-import pydot
 import time
+import tables
 from sklearn import preprocessing
 import matplotlib.pyplot as plt
 #import seaborn as sns
@@ -18,36 +18,7 @@ import matplotlib.pyplot as plt
 features = pd.read_csv('datosTFG.csv', delimiter=';')
 print('The shape of our features is:', features.shape)
 
-#sns.pairplot(features);
 #Transform Data
-
-
-'''
-FlowsALDT -> Numerico
-FlowsRunaway - MultiRunAway - MultiSalidaRapida-> Categorizar
-MultiRot (segundos) -> Objetivo
-Air_temperature_celsius, temperatura_condensacion- > kelvin
-presion atmosferica_level_Station -> Mirar Unidades
-presion atmosferica_level_sea -> Mirr unidades
-Direccion de viento -> Categorizar
-Velocidad del viento -> Mirar unidades
-Velocidad de rafaga-fenomeno especial -fenomeno especial operaciones-> ¿?
-Nubes > Categorizar
-Visibilidad Horizontal -> Categorizar
-StandKey, Ramp , terminal-> ¿Relevante?
-GS (THR)-> m/s
-vx,vy (THR)-> m/s
-TA Track Angle->
-FL corregir-> 
-
-REalizar nueva categorizacion RECAT-EU
-
-Item:air_temperature_celsiu = 5,0 es <class 'str'>
-Item:presion_atmosferica_level_station = 769,2 es <class 'str'>
-Item:presion_atmosferica_level_sea = 769,6 es <class 'str'>
-Item:tempeartura_condensacion = 2,0 es <class 'str'>
-'''
-
 features_complete = copy.deepcopy(features)
 
 #TRansform this var in float
@@ -56,7 +27,7 @@ features["presion_atmosferica_level_station"] = pd.to_numeric(features["presion_
 features["presion_atmosferica_level_sea"] = pd.to_numeric(features["presion_atmosferica_level_sea"].str.replace(',', '.').astype(float))
 features["tempeartura_condensacion"] = pd.to_numeric(features["tempeartura_condensacion"].str.replace(',', '.').astype(float))
 
-
+#Drop some Vars
 features = features.drop(['Callsign','air_temperature_celsiu','presion_atmosferica_level_station','presion_atmosferica_level_sea','FlowsEngines','humedad_relativa','velocidad_viento','tempeartura_condensacion','FlowsRunway','FlowsFlightRule','MultiRunway','MultiSalidaRapida','direccion_viento', 'FlowsFlightType', 'FlowsAircraft', 'FlowsADEP','FlowsALDT','velocidad_rafaga','fenomeno_especial','fenomeno_especial_operaciones','nubes','visibilidad_horizontal','standKey','Ramp','terminal'], axis=1)
 
 test = features.describe()
@@ -136,7 +107,7 @@ train_features, test_features, train_labels, test_labels = train_test_split(feat
 
 #Establish Baseline
 
-# The baseline predictions are 60
+# The baseline predictions are 46
 baseline_preds = test_features[:, feature_list.index('GS')]
 baseline_preds[baseline_preds != 46] = 46
 
@@ -144,6 +115,7 @@ baseline_preds[baseline_preds != 46] = 46
 baseline_errors = abs(baseline_preds - test_labels)
 
 print('Average baseline error: ', round(np.mean(baseline_errors), 2))
+
 
 #Train Model
 
@@ -222,6 +194,10 @@ f.write(test.to_html())
 f.close()
 
 webbrowser.open('test.html')
+
+f = open("test.png", "w")
+
+f.write(test)
 
 
 print("finish")

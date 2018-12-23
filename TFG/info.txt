@@ -1,0 +1,48 @@
+
+Resultados:
+
+The shape of our features is: (149928, 32)
+Backend Qt5Agg is interactive backend. Turning interactive mode on.
+Lenght data before clean: 149928
+Datos vacios: 7
+Rows con datos Nan: 7
+Lenght data after clean: 149921
+Average baseline error:  6.51
+--- 416.30949354171753 seconds ---
+Mean Absolute Error: 5.46 seconds
+Accuracy: 87.89 %.
+
+
+Objetivos:
+
+Guardar modelo, para realizar prediciones futuras.
+Limpiar Codigo.
+Analizar resultados, crear graficas.
+Escribir documento del ROT.
+
+
+'''
+FlowsALDT -> Numerico
+FlowsRunaway - MultiRunAway - MultiSalidaRapida-> Categorizar
+MultiRot (segundos) -> Objetivo
+Air_temperature_celsius, temperatura_condensacion- > kelvin
+presion atmosferica_level_Station -> Mirar Unidades
+presion atmosferica_level_sea -> Mirr unidades
+Direccion de viento -> Categorizar
+Velocidad del viento -> Mirar unidades
+Velocidad de rafaga-fenomeno especial -fenomeno especial operaciones-> ¿?
+Nubes > Categorizar
+Visibilidad Horizontal -> Categorizar
+StandKey, Ramp , terminal-> ¿Relevante?
+GS (THR)-> m/s
+vx,vy (THR)-> m/s
+TA Track Angle->
+FL corregir->
+
+REalizar nueva categorizacion RECAT-EU
+
+Item:air_temperature_celsiu = 5,0 es <class 'str'>
+Item:presion_atmosferica_level_station = 769,2 es <class 'str'>
+Item:presion_atmosferica_level_sea = 769,6 es <class 'str'>
+Item:tempeartura_condensacion = 2,0 es <class 'str'>
+'''
