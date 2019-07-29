@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="de7faccd-55c5-4e76-9c53-d1b75a485c4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TFG/DataCleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/TFG/DataCleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TFG/Code/tree.dot" beforeDir="false" afterPath="$PROJECT_DIR$/TFG/Code/tree.dot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +15,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TFG/DataCleaning.py">
+        <entry file="file://$PROJECT_DIR$/TFG/RotPrediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="151" selection-start-line="151" selection-end-line="161" selection-end-column="27" />
+            <state relative-caret-position="34">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#39#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -28,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="504">
+              <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -38,10 +39,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TFG/Code/Baseline RECAT-EU tercer paso tratamiento datos.py">
+        <entry file="file://$PROJECT_DIR$/TFG/Code/SalidasRapidas/salidas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/790567085/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80818">
+              <caret line="4754" column="8" selection-start-line="4754" selection-start-column="8" selection-end-line="4754" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5236">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
             </state>
           </provider>
         </entry>
@@ -49,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="102">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -61,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TFG/Code/Segundo Paso Tratamiento de Datos Times.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="1071">
               <caret line="82" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
@@ -70,17 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TFG/Code/Baseline calculation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TFG/Code/Dates.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="816">
+              <caret line="66" selection-start-line="66" selection-end-line="77" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -88,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TFG/Code/Primer Paso Tratamiento DAtos RECAT-EU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
+            <state relative-caret-position="1190">
               <caret line="91" selection-start-line="91" selection-end-line="91" selection-end-column="38" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -147,6 +160,7 @@
         <option value="$PROJECT_DIR$/TFG/Code/Segundo Paso Tratamiento de Datos Times.py" />
         <option value="$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py" />
         <option value="$PROJECT_DIR$/TFG/DataCleaning.py" />
+        <option value="$PROJECT_DIR$/TFG/Code/SalidasRapidas/salidas.py" />
         <option value="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" />
       </list>
     </option>
@@ -163,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,11 +200,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TFG/Code/SalidasRapidas/salidas.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -224,7 +238,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Presentation of Data">
+    <configuration name="Cuarto Paso tratamiento de datos, runways" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Ruben\Anaconda3\envs\TensorFlowEnvGpu\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TFG/Code" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Presentation of Data" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -246,6 +281,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="salidas" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Ruben\Anaconda3\envs\TensorFlowEnvGpu\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TFG/Code/SalidasRapidas" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TFG/Code/SalidasRapidas/salidas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Cuarto Paso tratamiento de datos, runways" />
+      <item itemvalue="Python.Presentation of Data" />
+      <item itemvalue="Python.salidas" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -261,34 +322,34 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15331928" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14646997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3109426" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40195015" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36078006" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13020489" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16596417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31232092" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3109426" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40195015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -345,19 +406,19 @@
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py</url>
-          <line>87</line>
-          <option name="timeStamp" value="157" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
+          <url>file://$PROJECT_DIR$/TFG/DataCleaning.py</url>
           <line>122</line>
-          <option name="timeStamp" value="159" />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TFG/Code/SalidasRapidas/salidas.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>136</line>
-          <option name="timeStamp" value="161" />
+          <line>97</line>
+          <option name="timeStamp" value="209" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -375,6 +436,7 @@
         <watch expression="predictions" />
         <watch expression="test_labels" />
         <watch expression="baseline_preds" />
+        <watch expression="list_salidas" />
       </configuration>
     </watches-manager>
   </component>
@@ -392,47 +454,47 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>(graph, ) = pydot.graph_from_dot_file('tree.dot')</expression-string>
+        <expression-string>abs(features['MultiROT'] - pred)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>import pydot</expression-string>
+        <expression-string>abs(features['MultiRot'] - pred)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>export_graphviz(tree, out_file = 'tree.dot', feature_names = feature_list, rounded = True, precision = 1)</expression-string>
+        <expression-string>median['UB']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>tree = rf.estimators_[5]</expression-string>
+        <expression-string>index(median['UB'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>test_features[:, feature_list.index('GS')]</expression-string>
+        <expression-string>median['UB'].__index__()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>len(data_dict['02']['MultiROT'])</expression-string>
+        <expression-string>[item for item in median]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>statistics.mean(data_dict['07L']['MultiROT'])</expression-string>
+        <expression-string>[median[item][0] for item in median]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>statistics.mean(data_dict['07R']['MultiROT'])</expression-string>
+        <expression-string>[median[item][1] for item in median]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>statistics.mean(data_dict['25L']['MultiROT'])</expression-string>
+        <expression-string>[ for item in median]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -464,16 +526,6 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/RotPrediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -528,16 +580,6 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/DataInput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TFG/Code/test.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -564,17 +606,112 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TFG/Code/RECAT-EU Category.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Baseline RECAT-EU tercer paso tratamiento datos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/DataCleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/DataInput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Dates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/RotPrediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/SalidasRapidas/salidas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/790567085/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80818">
+          <caret line="4754" column="8" selection-start-line="4754" selection-start-column="8" selection-end-line="4754" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5236">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Segundo Paso Tratamiento de Datos Times.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Baseline calculation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="66" selection-start-line="66" selection-end-line="77" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Primer Paso Tratamiento DAtos RECAT-EU.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="91" selection-start-line="91" selection-end-line="91" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -585,68 +722,10 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Primer Paso Tratamiento DAtos RECAT-EU.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="91" selection-start-line="91" selection-end-line="91" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Dates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Baseline calculation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Segundo Paso Tratamiento de Datos Times.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Baseline RECAT-EU tercer paso tratamiento datos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/DataCleaning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="151" selection-start-line="151" selection-end-line="161" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        <state relative-caret-position="504">
+          <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

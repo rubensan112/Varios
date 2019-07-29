@@ -21,7 +21,7 @@ import json
 import math
 import pydot
 
-'''
+
 #Load Data, and create DataFrame
 features = pd.read_pickle("dataRunway.pkl")
 features_old = pd.read_csv('datosTFG.csv', delimiter=';')
@@ -29,7 +29,7 @@ features_old = pd.read_csv('datosTFG.csv', delimiter=';')
 
 
 #Drop some Vars
-features = features.drop(['index','Callsign','FlowsADEP','FlowsFlightRule','FlowsFlightType','FlowsWake','FlowsAircraft','FlowsEngines','FlowsALDT','FlowsRunway','MultiSalidaRapida','air_temperature_celsiu','presion_atmosferica_level_station','presion_atmosferica_level_sea','humedad_relativa','velocidad_rafaga','fenomeno_especial','fenomeno_especial_operaciones','nubes','visibilidad_horizontal','standKey','Ramp','terminal','TA','VX','VY','datetimes'], axis=1)
+features = features.drop(['index','Callsign','direccion_viento','MultiRunway','tempeartura_condensacion','FL','FlowsADEP','FlowsFlightRule','FlowsFlightType','FlowsWake','FlowsAircraft','FlowsEngines','FlowsALDT','FlowsRunway','air_temperature_celsiu','presion_atmosferica_level_station','presion_atmosferica_level_sea','humedad_relativa','velocidad_rafaga','fenomeno_especial','fenomeno_especial_operaciones','nubes','visibilidad_horizontal','standKey','Ramp','terminal','TA','VX','VY','datetimes'], axis=1)
 features = pd.get_dummies(features)
 
 print('Lenght data before clean: {}'.format(len(features)))
@@ -126,9 +126,9 @@ print("hello")
 tree = rf.estimators_[5]
 
 # Export the image to a dot file
-export_graphviz(tree, out_file = 'tree.dot', feature_names = feature_list, rounded = True, precision = 1)
+#export_graphviz(tree, out_file = 'tree.dot', feature_names = feature_list, rounded = True, precision = 1)
 
-'''
+
 
 # Use dot file to create a graph
 (graph, ) = pydot.graph_from_dot_file('tree.dot')
