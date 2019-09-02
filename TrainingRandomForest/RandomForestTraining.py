@@ -139,7 +139,7 @@ export_graphviz(tree_small, out_file = 'small_tree.dot', feature_names = feature
 
 (graph, ) = pydot.graph_from_dot_file('small_tree.dot')
 
-graph.write_png('small_tree.png');
+graph.write_png('small_tree.png')
 '''
 In the usual machine learning workflow, 
 this would be when start hyperparameter tuning. 
