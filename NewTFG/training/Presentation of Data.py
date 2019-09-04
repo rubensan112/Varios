@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 # Import the model we are using
 from sklearn.ensemble import RandomForestRegressor
 # Import tools needed for visualization
-from sklearn.tree import export_graphviz
+#from sklearn.tree import export_graphviz
 import time
 from sklearn import preprocessing
 import matplotlib.pyplot as plt
@@ -19,11 +19,11 @@ from matplotlib.ticker import NullFormatter
 import statistics
 import json
 import math
-import graphviz
+#import graphviz
 #import tree
 import os
 #os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
-import pydot
+#import pydot
 
 
 

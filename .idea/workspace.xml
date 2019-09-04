@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="de7faccd-55c5-4e76-9c53-d1b75a485c4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewTFG/training/Presentation of Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewTFG/training/Presentation of Data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TFG/Code/tree.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainingRandomForest/RandomForestTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainingRandomForest/RandomForestTraining.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +14,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NewTFG/training/Presentation of Data.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NewTFG/training/NewTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="158" selection-start-line="158" selection-end-line="158" />
+            <state relative-caret-position="-587">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NewTFG/training/TuningParams.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -28,69 +39,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/codecs.py">
+        <entry file="file://$PROJECT_DIR$/script.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TFG/DataCleaning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2414">
+              <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Miniconda3/envs/TF/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="5236">
               <caret line="308" selection-start-line="308" selection-end-line="308" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewTFG/data_treatment/2 - Segundo Paso Variable Viento.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="71" column="71" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="71" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewTFG/data_analysis/categorical_vars.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" selection-start-line="81" selection-end-line="90" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewTFG/data_analysis/continue_vars.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/jupyter_console/ptshell.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/venv/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TFG/Code/Segundo Paso Tratamiento de Datos Times.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewTFG/data_analysis/stadistics_of_data.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -145,11 +144,14 @@
         <option value="$PROJECT_DIR$/NewTFG/data_treatment/2 - Segundo Paso Variable Viento.py" />
         <option value="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" />
         <option value="$PROJECT_DIR$/NewTFG/training/Presentation of Data.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/NewTFG/training/NewTraining.py" />
+        <option value="$PROJECT_DIR$/NewTFG/training/TuningParams.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="118" />
+    <option name="x" value="117" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -160,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,26 +172,23 @@
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="TFG" type="462c0819:PsiDirectoryNode" />
+              <item name="NewTFG" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="TFG" type="462c0819:PsiDirectoryNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="NewTFG" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/NewTFG/training/Presentation of Data.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/NewTFG/training/TuningParams.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -202,17 +200,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ruben\PycharmProjects\TF\NewTFG\training" />
-      <recent name="C:\Users\Ruben\PycharmProjects\TF\NewTFG\data_treatment" />
-      <recent name="C:\Users\Ruben\PycharmProjects\TF\NewTFG\original_data" />
-      <recent name="C:\Users\Ruben\PycharmProjects\TF\TFG\Code" />
-      <recent name="C:\Users\Rubén\PycharmProjects\TF\TrainingRandomForest" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ruben\PycharmProjects\TF\TFG\Code" />
       <recent name="C:\Users\Rubén\PycharmProjects\TF" />
       <recent name="C:\Users\Rubén\PycharmProjects\TF\TFG" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rubén\PycharmProjects\TF\NewTFG\training" />
+      <recent name="C:\Users\Ruben\PycharmProjects\TF\NewTFG\training" />
+      <recent name="C:\Users\Ruben\PycharmProjects\TF\NewTFG\data_treatment" />
+      <recent name="C:\Users\Ruben\PycharmProjects\TF\NewTFG\original_data" />
+      <recent name="C:\Users\Ruben\PycharmProjects\TF\TFG\Code" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -227,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Presentation of Data">
+  <component name="RunManager" selected="Python.TuningParams">
     <configuration name="1 - Treatment" type="PythonConfigurationType" factoryName="Python">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -298,9 +296,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Ruben\Anaconda3\envs\TensorFlowEnvGpu\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NewTFG/training" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NewTFG/training/Presentation of Data.py" />
@@ -325,6 +323,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NewTFG/data_analysis/categorical_vars.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TuningParams" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Rubén\Miniconda3\envs\TF\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NewTFG/training" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NewTFG/training/TuningParams.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -376,6 +395,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.TuningParams" />
       <item itemvalue="Python.RAndom Script" />
       <item itemvalue="Python.2 - Treatment" />
       <item itemvalue="Python.continue_vars_analysis" />
@@ -399,15 +419,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16807166" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1473893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3109426" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.60455036" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43909347" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -494,7 +514,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>184</line>
+          <line>183</line>
           <option name="timeStamp" value="227" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -504,22 +524,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>172</line>
+          <line>171</line>
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>169</line>
+          <line>168</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>153</line>
+          <line>152</line>
           <option name="timeStamp" value="243" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>147</line>
+          <line>146</line>
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -609,12 +629,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="287" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -633,9 +648,44 @@
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/NewTFG/training/Presentation of Data.py</url>
-          <line>158</line>
-          <option name="timeStamp" value="300" />
+          <line>157</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/Presentation of Data.py</url>
+          <line>126</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/Presentation of Data.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/NewTraining.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/TuningParams.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="310" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -646,16 +696,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="time[0]" />
-        <watch expression="features_old" />
-        <watch expression="predictions" />
-        <watch expression="test_labels" />
-        <watch expression="baseline_preds" />
-        <watch expression="list_salidas" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -717,6 +757,36 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>rf.get_params()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rf.get_estimator()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rf.get_estimator</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>hi</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rf.get_param()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>features_new</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -731,80 +801,9 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>print(rp.summary_cont(df['MultiROT'].groupby(df['diff_angle_runway_wind'])).to_string())</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>min(diff_angle_runway_wind)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>max(diff_angle_runway_wind)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>diff_angle_runway_wind</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>runway_angle</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>angle_wind[i]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/Descargas/graphviz-0.12/graphviz-0.12/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Descargas/graphviz-0.12/graphviz-0.12/examples/angles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="3" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/pydot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="234" selection-start-line="234" selection-end-line="234" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Baseline calculation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="66" selection-start-line="66" selection-end-line="77" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/ROT fenomenos especiales.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrainingRandomForest/small_tree.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrainingRandomForest/tree.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TrainingRandomForest/RandomForestTraining.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -862,13 +861,7 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/graphviz/dot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4556">
-          <caret line="268" column="6" selection-start-line="268" selection-start-column="6" selection-end-line="268" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/graphviz/dot.py" />
     <entry file="file://$PROJECT_DIR$/TFG/Code/SalidasRapidas/salidas.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -889,13 +882,7 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
     <entry file="file://$PROJECT_DIR$/graphviz-0.12/examples/cluster.gv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/graphviz/files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4505">
-          <caret line="272" column="8" selection-start-line="272" selection-start-column="8" selection-end-line="272" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/graphviz/files.py" />
     <entry file="file://$PROJECT_DIR$/graphviz-0.12/examples/angles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -917,26 +904,12 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/Descargas/graphviz-0.12/graphviz-0.12/graphviz/dot.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://F:/Descargas/graphviz-0.12/graphviz-0.12/graphviz/dot.py" />
     <entry file="file://$PROJECT_DIR$/NewTFG/original_data/datosTFG.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/matplotlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/sklearn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/matplotlib/__init__.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/sklearn/__init__.py" />
     <entry file="file://$PROJECT_DIR$/NewTFG/data_treatment/basic_treatment.py" />
     <entry file="file://$PROJECT_DIR$/NewTFG/data_treatment/data/firstRECAT-EU.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
@@ -948,13 +921,7 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35258">
-          <caret line="2131" column="8" selection-start-line="2131" selection-start-column="8" selection-end-line="2131" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/pandas/core/generic.py" />
     <entry file="file://$PROJECT_DIR$/TFG/Code/Primer Paso Tratamiento DAtos RECAT-EU.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -972,30 +939,8 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="3213" column="51" selection-start-line="3213" selection-start-column="51" selection-end-line="3213" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/790567085/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8313">
-          <caret line="489" selection-start-line="489" selection-end-line="489" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/pandas/core/frame.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/790567085/builtins.py" />
     <entry file="file://$PROJECT_DIR$/NewTFG/data_treatment/1 - Primer Paso Tratamiento Datos RECAT-EU.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -1006,23 +951,7 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewTFG/training/Presentation of Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/codecs.py" />
     <entry file="file://$PROJECT_DIR$/NewTFG/data_treatment/2 - Segundo Paso Variable Viento.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -1050,12 +979,8 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/jupyter_console/ptshell.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/venv/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/site-packages/jupyter_console/ptshell.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TensorFlowEnvGpu/Lib/venv/__init__.py" />
     <entry file="file://$PROJECT_DIR$/TFG/Code/Segundo Paso Tratamiento de Datos Times.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1065,6 +990,87 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/NewTFG/data_analysis/stadistics_of_data.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Cuarto Paso tratamiento de datos, runways.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/DataCleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/envs/TF/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5236">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TFG/Code/Presentation of Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewTFG/training/Presentation of Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="120" selection-start-line="120" selection-end-line="155" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewTFG/training/NewTraining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-587">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewTFG/training/TuningParams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
