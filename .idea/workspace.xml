@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7faccd-55c5-4e76-9c53-d1b75a485c4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewTFG/training/Presentation of Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewTFG/training/Presentation of Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/TFG/Code/Presentation of Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewTFG/training/TuningParams.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewTFG/training/TuningParams.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NewTFG/training/NewTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-587">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="161">
+              <caret line="72" column="39" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NewTFG/training/TuningParams.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+            <state relative-caret-position="263">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -86,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Miniconda3/envs/TF/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5236">
+            <state relative-caret-position="320">
               <caret line="308" selection-start-line="308" selection-end-line="308" />
             </state>
           </provider>
@@ -419,7 +417,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1473893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -684,8 +682,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/NewTFG/training/TuningParams.py</url>
-          <line>113</line>
+          <line>154</line>
           <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/TuningParams.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/TuningParams.py</url>
+          <line>131</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/TuningParams.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/TuningParams.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NewTFG/training/TuningParams.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="319" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -757,47 +780,47 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>rf.get_params()</expression-string>
+        <expression-string>CV_rfc.cv_results_['params']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rf.get_estimator()</expression-string>
+        <expression-string>CV_rfc.cv_results_['std_test_score']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rf.get_estimator</expression-string>
+        <expression-string>CV_rfc.cv_results_['mean_test_score']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hi</expression-string>
+        <expression-string>CV_rfc.cv_results_</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>mape</expression-string>
+        <expression-string>CV_rfc.best_params_</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rf.get_param()</expression-string>
+        <expression-string>rf.fit(train_features, train_labels)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>features_new</expression-string>
+        <expression-string>rf.fit()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>features</expression-string>
+        <expression-string>rf = RandomForestRegressor(n_estimators=10, random_state=223, min_samples_split=15, min_samples_leaf=15)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>feature_list</expression-string>
+        <expression-string>tuned_parameters</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1011,13 +1034,6 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Miniconda3/envs/TF/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1054,18 +1070,25 @@ data_dict['07L']['RumboPista'] = 70</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/NewTFG/training/NewTraining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-587">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="161">
+          <caret line="72" column="39" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="39" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/envs/TF/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NewTFG/training/TuningParams.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+        <state relative-caret-position="263">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -70,10 +70,49 @@ baseline_errors = abs(baseline_preds - test_labels)
 
 print('Average baseline error: ', round(np.mean(baseline_errors), 2))
 
+test = SVC()
 # Set the parameters by cross-validation
 tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4],
                      'C': [1, 10, 100, 1000]},
                     {'kernel': ['linear'], 'C': [1, 10, 100, 1000]}]
+
+tuned_parameters = [
+    {'min_samples_split': [2, 3, 4, 5],
+     'n_estimators':[10]}
+]
+
+rfc = RandomForestRegressor(random_state=42)
+param_grid = {
+    'n_estimators': [10, 20],
+    'max_features': ['auto', 'sqrt', 'log2'],
+    'max_depth' : [4,5,6,7,8]
+}
+CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
+CV_rfc.fit(train_features, train_labels)
+
+print("Best parameters set found on development set:")
+print()
+print(CV_rfc.best_params_)
+print()
+print("Grid scores on development set:")
+print()
+means = CV_rfc.cv_results_['mean_test_score']
+stds = CV_rfc.cv_results_['std_test_score']
+for mean, std, params in zip(means, stds, CV_rfc.cv_results_['params']):
+    print("%0.3f (+/-%0.03f) for %r"
+          % (mean, std * 2, params))
+print()
+
+print("Detailed classification report:")
+print()
+print("The model is trained on the full development set.")
+print("The scores are computed on the full evaluation set.")
+print()
+y_true, y_pred = test_labels, CV_rfc.predict(test_features)
+print(classification_report(y_true, y_pred))
+print()
+
+
 
 scores = ['precision', 'recall']
 
@@ -81,9 +120,11 @@ for score in scores:
     print("# Tuning hyper-parameters for %s" % score)
     print()
 
-    clf = GridSearchCV(SVC(), tuned_parameters, cv=5,
+
+    clf = GridSearchCV(RandomForestRegressor(), tuned_parameters, cv=5,
                        scoring='%s_macro' % score)
     clf.fit(train_features, train_labels)
+
 
     print("Best parameters set found on development set:")
     print()
