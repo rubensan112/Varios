@@ -82,11 +82,40 @@ tuned_parameters = [
 ]
 
 rfc = RandomForestRegressor(random_state=42)
-param_grid = {
-    'n_estimators': [10, 20],
-    'max_features': ['auto', 'sqrt', 'log2'],
-    'max_depth' : [4,5,6,7,8]
-}
+param_grid = [
+    {
+        'n_estimators': [150],
+        'criterion': ['mse', 'mae'],
+        'max_depth': [5, 10, 15, 20]
+    },
+    {
+        'n_estimators': [150],
+        'min_samples_leaf': [1, 4, 8, 12],
+        'min_weight_fraction_leaf': [0.0, 1.5, 3.0, 10],
+    },
+    {
+        'n_estimators': [150],
+        'max_features': ["auto", "sqrt", "log2", 5, 10, 15],
+        'max_leaf_nodes': [1, 4, 8],
+    },
+    {
+        'n_estimators': [150],
+        'min_impurity_decrease': [0.5, 3.5, 4.5, 8.5]
+    },
+    {
+        'n_estimators': [150],
+        'bootstrap': [True, False],
+        'warm_start': [True, False],
+        'verbose': [0, 2, 10]
+    },
+    {
+        'n_estimators': [150],
+        'oob_score': [True, False],
+        'verbose': [0, 4, 8],
+    },
+
+]
+#decision_path(self, X)[source]¶
 CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
 CV_rfc.fit(train_features, train_labels)
 
