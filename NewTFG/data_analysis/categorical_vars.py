@@ -11,20 +11,64 @@ import scipy.stats as stats
 import researchpy as rp
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
+import statsmodels.api as sm
 import matplotlib.pyplot as plt # Linea importante
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+from statsmodels.stats.multicomp import MultiComparison
 
 #import plotly.plotly as py
 #import plotly.graph_objs as go
 #from plotly.tools import FigureFactory as FF
 #import matplotlib.pyplot as plt # Linea importante
 
-df = pd.read_pickle("../data_treatment/data/firstRECAT-EU.pkl")
+df = pd.read_pickle("../data_treatment/data/3_data_with_times.pkl")
+
+index_list = []
+for index, value in enumerate(df['air_temperature_celsiu']):
+     if str(value) == 'nan':
+        index_list.append(index)
+
+df = df.drop(index_list)
+rp.summary_cont(df['air_temperature_celsiu'].groupby(df['week_number'])).to_csv('test6.csv', sep=";", decimal=",")
+df.boxplot(column="air_temperature_celsiu", by='week_number', figsize=(12, 8))
 
 #Create a boxplot
 df.boxplot(column="MultiROT", by='MultiSalidaRapida', figsize=(12, 8))
 df.boxplot(column="MultiROT", by='RECAT', figsize=(12, 8))
 df.boxplot(column="MultiROT", by='Ramp', figsize=(12, 8))
 df.boxplot(column="MultiROT", by='FlowsFlightType', figsize=(12, 8))
+
+### Day ###ç
+rp.summary_cont(df['MultiROT'].groupby(df['air_temperature_celsiu'])).to_csv('test6.csv', sep=";", decimal=",")
+df.boxplot(column="MultiROT", by='RECAT', figsize=(12, 8))
+
+# Tukey test
+mc = MultiComparison(df['MultiROT'], df['week_number'])
+result = mc.tukeyhsd()
+
+str(result).replace('.', ',')
+
+### Hour ###ç
+#rp.summary_cont(df['MultiROT'].groupby(df['hour'])).to_csv('test3.csv', sep=";", decimal=",")
+
+
+print("-----------------------------------------------------------------")
+print(rp.summary_cont(df['MultiROT'].groupby(df['hour'])).to_string())
+print("-----------------------------------------------------------------")
+results = ols('MultiROT ~ C(hour)', data=df).fit()
+print("Estudy of Hour with Anova Method")
+table = sm.stats.anova_lm(results, typ=2)
+print(results.summary())
+df.boxplot(column="MultiROT", by='hour', figsize=(12, 8))
+print("-----------------------------------------------------------------")
+
+# Tukey test
+mc = MultiComparison(df['MultiROT'], df['hour'])
+result = mc.tukeyhsd()
+
+str(result).replace('.', ',')
+print(result)
+print(mc.groupsunique)
 
 
 ### Ramp -  MultiSalidaRapida ###

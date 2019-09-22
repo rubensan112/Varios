@@ -81,38 +81,137 @@ tuned_parameters = [
      'n_estimators':[10]}
 ]
 
+'''
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+'''
 rfc = RandomForestRegressor(random_state=42)
 param_grid = [
     {
-        'n_estimators': [150],
         'criterion': ['mse', 'mae'],
         'max_depth': [5, 10, 15, 20]
-    },
+    }
+]
+#decision_path(self, X)[source]¶
+CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
+CV_rfc.fit(train_features, train_labels)
+
+print("Best parameters set found on development set:")
+print()
+print(CV_rfc.best_params_)
+print()
+print("Grid scores on development set:")
+print()
+means = CV_rfc.cv_results_['mean_test_score']
+stds = CV_rfc.cv_results_['std_test_score']
+for mean, std, params in zip(means, stds, CV_rfc.cv_results_['params']):
+    print("%0.3f (+/-%0.03f) for %r"
+          % (mean, std * 2, params))
+
+
+'''
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+'''
+rfc = RandomForestRegressor(random_state=42)
+param_grid = [
     {
-        'n_estimators': [150],
         'min_samples_leaf': [1, 4, 8, 12],
-        'min_weight_fraction_leaf': [0.0, 1.5, 3.0, 10],
-    },
+        'min_weight_fraction_leaf': [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+    }
+]
+#decision_path(self, X)[source]¶
+CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
+CV_rfc.fit(train_features, train_labels)
+
+print("Best parameters set found on development set:")
+print()
+print(CV_rfc.best_params_)
+print()
+print("Grid scores on development set:")
+print()
+means = CV_rfc.cv_results_['mean_test_score']
+stds = CV_rfc.cv_results_['std_test_score']
+for mean, std, params in zip(means, stds, CV_rfc.cv_results_['params']):
+    print("%0.3f (+/-%0.03f) for %r"
+          % (mean, std * 2, params))
+
+
+'''
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+'''
+rfc = RandomForestRegressor(random_state=42)
+param_grid = [
     {
-        'n_estimators': [150],
         'max_features': ["auto", "sqrt", "log2", 5, 10, 15],
         'max_leaf_nodes': [1, 4, 8],
-    },
+    }
+]
+#decision_path(self, X)[source]¶
+CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
+CV_rfc.fit(train_features, train_labels)
+
+print("Best parameters set found on development set:")
+print()
+print(CV_rfc.best_params_)
+print()
+print("Grid scores on development set:")
+print()
+means = CV_rfc.cv_results_['mean_test_score']
+stds = CV_rfc.cv_results_['std_test_score']
+for mean, std, params in zip(means, stds, CV_rfc.cv_results_['params']):
+    print("%0.3f (+/-%0.03f) for %r"
+          % (mean, std * 2, params))
+
+'''
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+'''
+rfc = RandomForestRegressor(random_state=42)
+param_grid = [
     {
-        'n_estimators': [150],
         'min_impurity_decrease': [0.5, 3.5, 4.5, 8.5]
-    },
+    }
+]
+#decision_path(self, X)[source]¶
+CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
+CV_rfc.fit(train_features, train_labels)
+
+print("Best parameters set found on development set:")
+print()
+print(CV_rfc.best_params_)
+print()
+print("Grid scores on development set:")
+print()
+means = CV_rfc.cv_results_['mean_test_score']
+stds = CV_rfc.cv_results_['std_test_score']
+for mean, std, params in zip(means, stds, CV_rfc.cv_results_['params']):
+    print("%0.3f (+/-%0.03f) for %r"
+          % (mean, std * 2, params))
+
+
+'''
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+'''
+rfc = RandomForestRegressor(random_state=42)
+param_grid = [
     {
-        'n_estimators': [150],
         'bootstrap': [True, False],
         'warm_start': [True, False],
         'verbose': [0, 2, 10]
-    },
-    {
-        'n_estimators': [150],
-        'oob_score': [True, False],
-        'verbose': [0, 4, 8],
-    },
+    }
 
 ]
 #decision_path(self, X)[source]¶
@@ -130,16 +229,37 @@ stds = CV_rfc.cv_results_['std_test_score']
 for mean, std, params in zip(means, stds, CV_rfc.cv_results_['params']):
     print("%0.3f (+/-%0.03f) for %r"
           % (mean, std * 2, params))
-print()
 
-print("Detailed classification report:")
+
+'''
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+'''
+rfc = RandomForestRegressor(random_state=42)
+param_grid = [
+    {
+        'oob_score': [True, False],
+        'verbose': [0, 4, 8],
+    }
+]
+#decision_path(self, X)[source]¶
+CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
+CV_rfc.fit(train_features, train_labels)
+
+print("Best parameters set found on development set:")
 print()
-print("The model is trained on the full development set.")
-print("The scores are computed on the full evaluation set.")
+print(CV_rfc.best_params_)
 print()
-y_true, y_pred = test_labels, CV_rfc.predict(test_features)
-print(classification_report(y_true, y_pred))
+print("Grid scores on development set:")
 print()
+means = CV_rfc.cv_results_['mean_test_score']
+stds = CV_rfc.cv_results_['std_test_score']
+for mean, std, params in zip(means, stds, CV_rfc.cv_results_['params']):
+    print("%0.3f (+/-%0.03f) for %r"
+          % (mean, std * 2, params))
+
 
 
 

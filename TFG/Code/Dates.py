@@ -68,7 +68,7 @@ binwidth = 0.25
 xymax = max(np.max(np.abs(x)), np.max(np.abs(y)))
 lim = (int(xymax/binwidth) + 1) * binwidth
 
-axScatter.set_xlim((-lim, lim))
+axScatter.set_xlim((0, lim))
 axScatter.set_ylim((-lim, lim))
 
 bins = np.arange(-lim, lim + binwidth, binwidth)

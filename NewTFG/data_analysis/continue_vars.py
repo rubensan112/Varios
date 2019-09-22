@@ -6,7 +6,7 @@ from statsmodels.formula.api import ols
 import matplotlib.pyplot as plt # Linea importante
 
 # generate related variables
-from numpy import mean
+from numpy import mean, array
 from numpy import std
 from numpy.random import randn
 from numpy.random import seed
@@ -16,11 +16,48 @@ from scipy.stats import pearsonr, chisquare
 from scipy.stats import spearmanr
 
 
-df = pd.read_pickle("../data_treatment/data/firstRECAT-EU.pkl")
+df = pd.read_pickle("../data_treatment/data/3_data_with_times.pkl")
 
-data1 = df["MultiROT"]
-data2 = df["humedad_relativa"]
-pe_chisquare = chisquare(f_obs=data1, f_exp=data2)
+### Temperatura ###
+
+### humedad_relativa ###
+
+data1 = array(df["MultiROT"])
+data2 = array(df["air_temperature_celsiu"])
+
+# summarize
+print('data1: mean=%.3f stdv=%.3f' % (mean(data1), std(data1)))
+print('data2: mean=%.3f stdv=%.3f' % (mean(data2), std(data2)))
+# plot
+pyplot.scatter(data2, data1)
+pyplot.show()
+
+### Covariance ###
+
+covariance = cov(data1, data2)
+print(covariance)
+
+### Pearson’s Correlation ###
+
+corr, _ = pearsonr(data1, data2)
+print('Pearsons correlation: %.3f' % corr)
+
+### Spearman’s Correlation ###
+corr, _ = spearmanr(data1, data2)
+print('Spearmans correlation: %.3f' % corr)
+
+##########
+
+
+
+
+
+
+
+
+
+
+
 
 ### humedad_relativa ###
 

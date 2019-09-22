@@ -39,6 +39,7 @@ for flight in FlowsALDT:
     hour.append(float(datetime.strftime(time[i], '%H')))
     i = i + 1;
 
+
 first_date = time[0]
 last_date = time[len(time)-1]
 
@@ -46,13 +47,19 @@ features["datetimes"] = time
 features["week_number"] = week_number
 features["hour"] = hour
 
+
 x = np.arange(0, 24, 1)
 y = np.zeros(24, np.int)
+rot_m = np.zeros(24, np.int)
+rot_m_e = np.zeros(24, np.int)
+i = 0
 for hour_flight in features["hour"]:
     y[int(hour_flight)] += 1
+    rot_m[int(hour_flight)] += features['MultiROT'][i]
+    rot_m_e[int(hour_flight)] += 1
+    i += 1
 
-
-
+medium_rot = rot_m / rot_m_e
 
 def gbar(ax, x, y, width=0.5, bottom=0):
     X = [[.6, .6], [.7, .7]]
@@ -61,6 +68,7 @@ def gbar(ax, x, y, width=0.5, bottom=0):
         right = left + width
         ax.imshow(X, interpolation='bicubic', cmap=plt.cm.copper,
                   extent=(left, right, bottom, top), alpha=1)
+
 
 
 
