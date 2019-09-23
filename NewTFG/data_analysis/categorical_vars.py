@@ -21,7 +21,14 @@ from statsmodels.stats.multicomp import MultiComparison
 #from plotly.tools import FigureFactory as FF
 #import matplotlib.pyplot as plt # Linea importante
 
-df = pd.read_pickle("../data_treatment/data/3_data_with_times.pkl")
+df = pd.read_pickle("../data_treatment/data/4_data_with_meteo.pkl")
+
+
+rp.summary_cont(df['MultiROT'].groupby(df['direccion_viento'])).to_csv('test6.csv', sep=";", decimal=",")
+
+
+
+
 
 index_list = []
 for index, value in enumerate(df['air_temperature_celsiu']):

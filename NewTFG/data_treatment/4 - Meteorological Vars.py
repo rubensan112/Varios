@@ -7,6 +7,7 @@ from numpy import cov
 from scipy.stats import pearsonr, chisquare
 from scipy.stats import spearmanr
 
+from matplotlib import pyplot
 
 features = pd.read_pickle("data/3_data_with_times.pkl")
 
@@ -57,11 +58,47 @@ for tmp, tmp_cond in zip(features['air_temperature_celsiu'], features['tempeartu
 
 
 
+features.to_pickle("data/4_data_with_meteo.pkl")
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+data1 = features["MultiROT"]
+data2 = features["tempeartura_condensacion"]
+
+pyplot.scatter(data2, data1)
+pyplot.show()
+
+covariance = cov(data1, data2)
+print(covariance)
+
+### Pearson’s Correlation ###
+
+corr, p_value = pearsonr(data1, data2)
+print('Pearsons correlation: %.3f' % corr)
+
+### Spearman’s Correlation ###
+corr, p_value1 = spearmanr(data1, data2)
+print('Spearmans correlation: %.3f' % corr)
 
 
 

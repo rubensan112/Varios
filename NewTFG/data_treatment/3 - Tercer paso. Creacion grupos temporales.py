@@ -138,6 +138,7 @@ week_categories = []
 for idx, val in enumerate(features['week_number']):
     week_categories.append(groups_week[str(int(val))])
 
+features['hour_categories'] = hour_categories
 features['week_categories'] = week_categories
 
 features.to_pickle("data/3_data_with_times.pkl")
