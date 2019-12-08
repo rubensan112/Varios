@@ -7,6 +7,7 @@ from numpy import cov
 from scipy.stats import pearsonr, chisquare
 from scipy.stats import spearmanr
 import math
+from numpy import std
 from numpy import mean, array
 import matplotlib.pyplot as plt # Linea importante
 
@@ -71,25 +72,34 @@ diff_angle_runway_wind = []
 diff_angle_runway_wind_full = []
 for runway_angle in new_runway:
     diff = runway_angle - angle_wind[i]
-    if diff < 0:
+    if diff < -180:
         diff += 360
     if diff > 180:
         diff -= 360
-        diff = abs(diff)
+    diff = abs(diff)
     diff_angle_runway_wind.append(diff)
     i+=1
 
 intensidad_proyectada = []
 for index, element in enumerate(df['velocidad_viento']):
-    intensidad_proyectada.append(element * math.cos(diff_angle_runway_wind[index]))
+    intensidad_proyectada.append(element * math.cos((diff_angle_runway_wind[index] * math.pi) / 180))
 
+intensidad_lateral = []
+for index, element in enumerate(df['velocidad_viento']):
+    intensidad_lateral.append(element * math.sin((diff_angle_runway_wind[index] * math.pi) / 180))
 
 
 df["diff_angle_runway_wind"] = diff_angle_runway_wind
 df["intensidad_proyectada"] = intensidad_proyectada
+df["intensidad_lateral"] = intensidad_lateral
+
+df.to_pickle("data/5_data_with_wind.pkl")
 
 data1 = array(df["MultiROT"])
-data2 = array(df["velocidad_viento"])
+data2 = array(df["intensidad_lateral"])
+
+print('data1: mean=%.3f stdv=%.3f' % (mean(data1), std(data1)))
+print('data2: mean=%.3f stdv=%.3f' % (mean(data2), std(data2)))
 
 covariance = cov(data1, data2)
 print(covariance)
@@ -102,6 +112,29 @@ print('Pearsons correlation: %.3f' % corr)
 ### Spearman’s Correlation ###
 corr, pvalue2 = spearmanr(data1, data2)
 print('Spearmans correlation: %.3f' % corr)
+
+data1 = array(df["MultiROT"])
+data2 = array(df["intensidad_proyectada"])
+
+print('data1: mean=%.3f stdv=%.3f' % (mean(data1), std(data1)))
+print('data2: mean=%.3f stdv=%.3f' % (mean(data2), std(data2)))
+
+covariance = cov(data1, data2)
+print(covariance)
+
+### Pearson’s Correlation ###
+
+corr, pvalue1 = pearsonr(data1, data2)
+print('Pearsons correlation: %.3f' % corr)
+
+### Spearman’s Correlation ###
+corr, pvalue2 = spearmanr(data1, data2)
+print('Spearmans correlation: %.3f' % corr)
+
+
+
+
+
 ### Variable Viento ###
 
 print("-----------------------------------------------------------------")

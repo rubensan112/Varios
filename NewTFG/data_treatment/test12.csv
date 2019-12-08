@@ -1,0 +1,41 @@
+fenomeno_especial;N;Mean;SD;SE;95% Conf.;Interval
+Drizzle;147;49,7347;9,2146;0,7600;48,2400;51,2294
+Drizzle, mist;12;44,2500;5,6428;1,6289;40,9153;47,5847
+Dust/sand whirls (dust devils);19;64,3158;6,1739;1,4164;61,4636;67,1680
+Heavy drizzle;14;51,6429;7,7122;2,0612;47,4505;55,8353
+Heavy rain;64;48,3906;7,2454;0,9057;46,6015;50,1798
+Heavy thunderstorm, rain;56;48,6607;6,6886;0,8938;46,8930;50,4284
+In the vicinity drizzle;21;46,5238;6,7054;1,4632;43,5851;49,4626
+In the vicinity fog;67;45,8358;6,0718;0,7418;44,3709;47,3007
+In the vicinity rain;48;44,3750;6,4301;0,9281;42,5367;46,2133
+In the vicinity shower(s);34;49,4118;10,9603;1,8797;45,6722;53,1513
+In the vicinity shower(s), light drizzle, thunderstorm;3;66,3333;13,7961;7,9652;47,2129;85,4538
+In the vicinity shower(s), thunderstorm, light drizzle;10;44,0000;6,3421;2,0055;39,8565;48,1435
+In the vicinity thunderstorm;145;45,4621;6,9252;0,5751;44,3310;46,5932
+In the vicinity thunderstorm, in the vicinity shower(s);25;44,2000;6,6521;1,3304;41,5386;46,8614
+In the vicinity thunderstorm, light drizzle;11;43,1818;5,2310;1,5772;39,9396;46,4240
+Light drizzle;744;49,1008;9,8718;0,3619;48,3910;49,8106
+Light drizzle, mist;20;45,1000;6,3569;1,4215;42,2416;47,9584
+Light rain;1678;46,8558;9,6011;0,2344;46,3963;47,3153
+Light rain, drizzle;16;57,6250;10,8681;2,7170;52,1250;63,1250
+Light rain, drizzle, mist;16;47,6250;7,4196;1,8549;43,8702;51,3798
+Light rain, mist;9;46,6667;6,8557;2,2852;41,9159;51,4174
+Light rain, thunderstorm;5;57,2000;4,4944;2,0100;52,7954;61,6046
+Light shower(s), rain;63;43,6825;5,9101;0,7446;42,2114;45,1537
+Light shower(s), rain, in the vicinity thunderstorm;48;49,0833;6,2393;0,9006;47,2995;50,8671
+Light thunderstorm, rain;99;44,4545;6,5063;0,6539;43,1664;45,7427
+Mist;243;49,0370;9,8259;0,6303;47,7990;50,2750
+Mist, light drizzle;13;42,5385;3,1256;0,8669;40,7700;44,3069
+Mist,partial (covering part of the aerodrome) fog;23;48,0870;6,6600;1,3887;45,3039;50,8700
+Mist,patches fog;9;40,2222;6,8698;2,2899;35,4617;44,9828
+Patches fog;263;43,9011;6,7709;0,4175;43,0813;44,7210
+Rain;585;48,6308;9,5360;0,3943;47,8573;49,4042
+Rain, in the vicinity thunderstorm;14;54,7143;14,2905;3,8193;46,9459;62,4827
+Rain, mist;24;45,8333;5,2143;1,0644;43,7023;47,9643
+Shower(s), rain;22;56,4545;14,9148;3,1798;50,0754;62,8337
+Shower(s), rain, in the vicinity thunderstorm;12;50,5000;5,7446;1,6583;47,1052;53,8948
+Shower(s), rain, thunderstorm;23;48,3478;9,3449;1,9486;44,4428;52,2528
+Thunderstorm;54;44,7037;7,5276;1,0244;42,6771;46,7303
+Thunderstorm, in the vicinity shower(s);10;43,7000;6,7995;2,1502;39,2577;48,1423
+Thunderstorm, light drizzle;12;44,0000;7,0195;2,0263;39,8518;48,1482
+Thunderstorm, rain;44;49,3864;7,0090;1,0566;47,2914;51,4813

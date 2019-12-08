@@ -8,6 +8,7 @@ features = pd.read_pickle("../data_treatment/data/firstRECAT-EU.pkl")
 
 import pandas as pd
 import scipy.stats as stats
+from scipy.stats import kruskal
 import researchpy as rp
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
@@ -23,8 +24,29 @@ from statsmodels.stats.multicomp import MultiComparison
 
 df = pd.read_pickle("../data_treatment/data/4_data_with_meteo.pkl")
 
+# Nuevo Analisis de la variable Hours
+print("-----------------------------------------------------------------")
+print(rp.summary_cont(df['MultiROT'].groupby(df['hour'])).to_string())
+print("-----------------------------------------------------------------")
+results = ols('MultiROT ~ C(hour)', data=df).fit()
+print("Estudy of Hour with Anova Method")
+table = sm.stats.anova_lm(results, typ=2)
+print(results.summary())
+df.boxplot(column="MultiROT", by='hour', figsize=(12, 8))
+print("-----------------------------------------------------------------")
 
-rp.summary_cont(df['MultiROT'].groupby(df['direccion_viento'])).to_csv('test6.csv', sep=";", decimal=",")
+# Tukey test
+mc = MultiComparison(df['MultiROT'], df['hour'])
+result = mc.tukeyhsd()
+
+str(result).replace('.', ',')
+
+
+
+
+
+
+#rp.summary_cont(df['MultiROT'].groupby(df['direccion_viento'])).to_csv('test6.csv', sep=";", decimal=",")
 
 
 
@@ -36,6 +58,11 @@ for index, value in enumerate(df['air_temperature_celsiu']):
         index_list.append(index)
 
 df = df.drop(index_list)
+
+
+kruskal(df['hour'], df[''])
+#print(sm.stats.anova_lm(results, typ=2))
+
 rp.summary_cont(df['air_temperature_celsiu'].groupby(df['week_number'])).to_csv('test6.csv', sep=";", decimal=",")
 df.boxplot(column="air_temperature_celsiu", by='week_number', figsize=(12, 8))
 

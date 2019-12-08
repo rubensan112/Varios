@@ -34,16 +34,26 @@ PARAMS = {
 
 #Load Data, and create DataFrame
 #features_new = pd.read_pickle("dataRunway.pkl")
-features_new = pd.read_pickle("../data_treatment/data/diff_angle_runway_wind_float.pkl")
+#features_new = pd.read_pickle("../data_treatment/data/diff_angle_runway_wind_float.pkl")
 # features_old = pd.read_csv('datosTFG.csv', delimiter=';')
-
+features_new = pd.read_pickle("../data_treatment/data/7_data_with_fenomenos_especiales.pkl")
 
 features = pd.DataFrame()
 features["MultiROT"] = features_new["MultiROT"]
-features["MultiRunway"] = features_new["MultiSalidaRapida"]
+features["MultiRunway"] = features_new["MultiRunway"]
 features["RECAT"] = features_new["RECAT"]
+features["hour_categories"] = features_new["hour_categories"]
+features["week_categories"] = features_new["week_categories"]
+features["air_temperature_celsiu"] = features_new["air_temperature_celsiu"]
+features["air_temperature_celsiu"] = features_new["air_temperature_celsiu"]
 features["diff_angle_runway_wind"] = features_new["diff_angle_runway_wind"]
-features["velocidad_viento"] = features_new["velocidad_viento"]
+features["humedad_relativa"] = features_new["humedad_relativa"]
+features["presion_atmosferica_level_station"] = features_new["presion_atmosferica_level_station"]
+features["altura_nubes"] = features_new["altura_nubes"]
+features["densidad_nubes"] = features_new["densidad_nubes"]
+features["groups_visibilidad_horizontal"] = features_new["groups_visibilidad_horizontal"]
+features["groups_fenomeno_especial"] = features_new["groups_fenomeno_especial"]
+
 
 diff_angle_runway_wind_full_cat = []
 for item in features_new["diff_angle_runway_wind"]:
@@ -163,13 +173,31 @@ for feature_importances in rf.feature_importances_:
 # Pull out one tree from the forest
 tree = rf.estimators_[5]
 # Export the image to a dot file
-export_graphviz(tree, out_file = 'tree.dot', feature_names = feature_list, rounded = True, precision = 1)
+#export_graphviz(tree, out_file = 'tree.dot', feature_names = feature_list, rounded = True, precision = 1)
 # Use dot file to create a graph
-(graph, ) = pydot.graph_from_dot_file('tree.dot') #El pydot no funka
+#(graph, ) = pydot.graph_from_dot_file('tree.dot') #El pydot no funka
 # Write graph to a png file
-graph.write_png('tree.png')
+#graph.write_png('tree.png')
 
+'''
+Mejor predicion 3.53 segundos.
+features = pd.DataFrame()
+features["MultiROT"] = features_new["MultiROT"]
+features["MultiRunway"] = features_new["MultiSalidaRapida"]
+features["RECAT"] = features_new["RECAT"]
+features["hour_categories"] = features_new["hour_categories"]
+features["week_categories"] = features_new["week_categories"]
+features["air_temperature_celsiu"] = features_new["air_temperature_celsiu"]
+features["air_temperature_celsiu"] = features_new["air_temperature_celsiu"]
+features["diff_angle_runway_wind"] = features_new["diff_angle_runway_wind"]
+features["humedad_relativa"] = features_new["humedad_relativa"]
+features["presion_atmosferica_level_station"] = features_new["presion_atmosferica_level_station"]
+features["altura_nubes"] = features_new["altura_nubes"]
+features["densidad_nubes"] = features_new["densidad_nubes"]
+features["groups_visibilidad_horizontal"] = features_new["groups_visibilidad_horizontal"]
+features["groups_fenomeno_especial"] = features_new["groups_fenomeno_especial"]
 
+'''
 
 
 graph = graphviz.Source('final.dot')

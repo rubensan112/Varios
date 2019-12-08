@@ -10,14 +10,24 @@ from sklearn.metrics import classification_report
 from sklearn.svm import SVC
 
 
-features_new = pd.read_pickle("../data_treatment/data/diff_angle_runway_wind_float.pkl")
+features_new = pd.read_pickle("../data_treatment/data/7_data_with_fenomenos_especiales.pkl")
 
 features = pd.DataFrame()
 features["MultiROT"] = features_new["MultiROT"]
-#features["MultiRunway"] = features_new["MultiSalidaRapida"]
+features["MultiRunway"] = features_new["MultiRunway"]
 features["RECAT"] = features_new["RECAT"]
+features["hour_categories"] = features_new["hour_categories"]
+features["week_categories"] = features_new["week_categories"]
+features["air_temperature_celsiu"] = features_new["air_temperature_celsiu"]
+features["air_temperature_celsiu"] = features_new["air_temperature_celsiu"]
 features["diff_angle_runway_wind"] = features_new["diff_angle_runway_wind"]
-features["velocidad_viento"] = features_new["velocidad_viento"]
+features["humedad_relativa"] = features_new["humedad_relativa"]
+features["presion_atmosferica_level_station"] = features_new["presion_atmosferica_level_station"]
+features["altura_nubes"] = features_new["altura_nubes"]
+features["densidad_nubes"] = features_new["densidad_nubes"]
+features["groups_visibilidad_horizontal"] = features_new["groups_visibilidad_horizontal"]
+features["groups_fenomeno_especial"] = features_new["groups_fenomeno_especial"]
+
 
 features = pd.get_dummies(features)
 
@@ -87,16 +97,20 @@ tuned_parameters = [
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 '''
-rfc = RandomForestRegressor(random_state=42)
+start_time = time.time()
+
+rfc = RandomForestRegressor(n_estimators=10, random_state=223)
 param_grid = [
     {
         'criterion': ['mse', 'mae'],
-        'max_depth': [5, 10, 15, 20]
+        'max_depth': [5, 7, 10]
     }
 ]
 #decision_path(self, X)[source]¶
-CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 5)
+
+CV_rfc = GridSearchCV(estimator=rfc, param_grid=param_grid, cv= 2)
 CV_rfc.fit(train_features, train_labels)
+print("--- %s seconds ---" % (time.time() - start_time))
 
 print("Best parameters set found on development set:")
 print()
